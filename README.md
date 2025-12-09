@@ -20,8 +20,8 @@
 </div>
 
 ## 🔧️ Framework
-![abstract](assets/framework_1.jpg)
-![framework](assets/framework_2.jpg)
+![teaser](assets/Figure_1.png)
+![framework](assets/Figure_2.png)
 
 ## 📅️ Roadmap
 
