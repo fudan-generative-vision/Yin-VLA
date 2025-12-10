@@ -26,7 +26,10 @@
 ## 📅️ Roadmap
 
 | Status | Milestone                                                                                             |    ETA     |
-| :----: | :---------------------------------------------------------------------------------------------------- | :--------: |
-|   🚀   | **[Inference source code meet everyone on GitHub](https://github.com/fudan-generative-vision/WAM-Flow)** | TBD        |
+| :----: | :----------------------------------------------------------------------------------------------------: | :--------: |
+|   🚀   | **[Releasing the inference source code](https://github.com/fudan-generative-vision/WAM-Flow)** | 2025.12.21        |
 |   🚀   | **[Pretrained models on Huggingface](https://huggingface.co/fudan-generative-ai/WAM-Flow)**              | TBD        |
 |   🚀   | **[Releasing the training scripts](#training)**                                                          | TBD        |
+
+## 🤗 Acknowledgements
+We gratefully acknowledge the contributors to the [Janus](https://github.com/deepseek-ai/Janus), [FUDOKI](https://github.com/fudoki-hku/FUDOKI) and [flow_matching](https://github.com/facebookresearch/flow_matching) repositories, whose commitment to open source has provided us with their excellent codebases and pretrained models.
