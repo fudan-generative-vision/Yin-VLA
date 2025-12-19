@@ -23,7 +23,7 @@
 <div align='center'>
     <a href='https://github.com/fudan-generative-vision/WAM-Flow'><img src='https://img.shields.io/github/stars/fudan-generative-vision/WAM-Flow?style=social'></a>
     <a href='https://arxiv.org/abs/2512.06112'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-    <a href='https://huggingface.co/fudan-generative-ai/WAM-Flow'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
+    <!-- <a href='https://huggingface.co/fudan-generative-ai/WAM-Flow'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a> -->
 </div>
 <br>
 
