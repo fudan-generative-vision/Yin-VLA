@@ -1,0 +1,17 @@
+omegaconf
+transformers==4.42.4
+timm
+tokenizers
+attrdict
+torch==2.0.1
+torchvision
+accelerate
+sentencepiece
+einops
+torchdiffeq
+matplotlib
+numpy==1.26.4
+icecream
+xformers==0.0.22
+diffusers==0.32.2
+deepspeed
