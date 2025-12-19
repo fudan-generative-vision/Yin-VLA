@@ -94,6 +94,8 @@ def training_step(
         # update emb layer when using num tokenizer
         path_sample = path.sample(x_0, x_1, t)
         x_t = path_sample.x_t
+    else:
+        x_t = None
 
     # text_token_mask==1 ==> generated text token
     x_t = x_t * data_info['text_token_mask'] + x_1 * (1 - data_info['text_token_mask'])
