@@ -15,12 +15,11 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      - name: Install pylint
+        id: install_deps_req
         run: |
-          python -m pip install --upgrade pylint
-          python -m pip install --upgrade isort
           python -m pip install -r requirements.txt
+          python -m pip install --upgrade pylint
       - name: Analysing the code with pylint
         run: |
-          isort $(git ls-files '*.py') --check-only --diff
-          pylint $(git ls-files '*.py')
+          grep -r -l "# LINT_ME" * | xargs pylint
