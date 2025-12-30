@@ -67,23 +67,50 @@
 Our method takes as input a front-view image, a natural-language navigation command with a system prompt, and the ego-vehicle states, and outputs an 8-waypoint future trajectory spanning 4 seconds through parallel denoising. The model is first trained via supervised fine-tuning to learn accurate trajectory prediction. We then apply simulatorguided GRPO to further optimize closed-loop behavior. The GRPO reward function integrates safety constraints (collision avoidance, drivable-area compliance) with performance objectives (ego-progress, time-to-collision, comfort).
 
 
-## Preparation
 
-### Environment
+## Quick Start
+
+### Installation
+
+Clone the repo:
+
+```sh
+git clone https://github.com/fudan-generative-vision/WAM-Flow.git
+cd WAM-Flow
+```
+
+Install dependencies:
+
 ```sh
 conda create --name wam-flow python=3.10
 conda activate wam-flow
 pip install -r requirements.txt
 ```
 
-## Training
+
+### Model Download
+
+Download models using huggingface-cli:
+
 ```sh
-sh script/sft_debug.sh
+pip install "huggingface_hub[cli]"
+huggingface-cli download fudan-generative-ai/WAM-Flow --local-dir ./pretrained_model/wam-flow
+huggingface-cli download LucasJinWang/FUDOKI --local-dir ./pretrained_model/fudoki
 ```
 
-## Inference
+
+
+### Inference
+
 ```sh
 sh script/infer.sh
+```
+
+
+### Training
+
+```bash
+sh script/sft_debug.sh
 ```
 
 
